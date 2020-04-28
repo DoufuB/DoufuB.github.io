@@ -168,7 +168,7 @@ body {
     display: block;
     margin-right: auto;
     margin-left: auto;
-    max-width: 960px;
+    max-width: 1180px;
    }
   
 
@@ -523,3 +523,5 @@ h1 { font-family: Courier New, Courier, Lucida Sans Typewriter, Lucida Typewrite
   font-variant: normal;
   text-transform: none;
 }
+
+
