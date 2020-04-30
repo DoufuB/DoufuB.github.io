@@ -4,18 +4,8 @@
 	margin: 0;
 	padding: 20px 0 0 0;
 	list-style: none;  
-	background: #8b4513;
-	background: -moz-linear-gradient(#8b4513); 
-        background: -webkit-gradient(linear,left bottom,left top,color-stop(0, #8b4513),color-stop(1, #8b4513));	
-	background: -webkit-linear-gradient(#8b4513);	
-	background: -o-linear-gradient(#444, #111);
-	background: -ms-linear-gradient(#a05c2b);
-	background: linear-gradient(#773f17);
-	-moz-border-radius: 50px;
-	border-radius: 50px;
-	-moz-box-shadow: 0 2px 1px #9c7777;
-	-webkit-box-shadow: 0 2px 1px #9c9c9c;
-  box-shadow: 0 2px 1px #9c9c9c;
+	background:white;
+
 }
 
 #menu li{
@@ -28,19 +18,20 @@
 	float: left;
 	height: 30px;
 	padding: 0 25px;
-	color: rgba(247, 245, 241, 0.692);
+	color: #8b3413;
 	text-transform: uppercase;
-	font: bold 15px/25px Arial, Helvetica;
+	font-family: 'Lato', sans-serif;;
 	text-decoration: none;
-	text-shadow: 0 1px 0 #000;
+  text-shadow: 0 1px 0 #000;
+  padding-left: 0;
 }
 
 #menu li:hover > a{
-	color: #fafafa;
+	color: #8b3413;
 }
 
 *html #menu li a:hover{ /* IE6 */
-	color: #fafafa;
+	color: #8b3413;
 }
 
 #menu li:hover > ul{
@@ -58,13 +49,8 @@
     top: 35px;
     left: 0;
     z-index: 99999;    
-    background: #444;
-    background: -moz-linear-gradient(#444, #111);
-    background: -webkit-gradient(linear,left bottom,left top,color-stop(0, #111),color-stop(1, #444));
-    background: -webkit-linear-gradient(#444, #111);    
-    background: -o-linear-gradient(#444, #111);	
-    background: -ms-linear-gradient(#444, #111);	
-    background: linear-gradient(#444, #111);	
+    background: white;
+
     -moz-border-radius: 5px;
     border-radius: 5px;
 }
@@ -83,6 +69,7 @@
     -moz-box-shadow: none;
     -webkit-box-shadow: none;
     box-shadow: none;    
+    
 }
 
 #menu ul a{    
@@ -93,32 +80,32 @@
     white-space: nowrap;
     float: none;
     text-transform: none;
+    border: 1px solid brown;
 }
 
 *html #menu ul a{ /* IE6 */   
 	height: 10px;
-	width: 150px;
+  width: 150px;
+  padding-right:0;
+  border: 1px solid brown;
 }
 
 *:first-child+html #menu ul a{ /* IE7 */    
 	height: 10px;
-	width: 150px;
+  width: 150px;
+  padding-right:0;
+  border: 1px solid brown;
 }
 
 #menu ul a:hover{
-    background: #0186ba;
-	background: -moz-linear-gradient(#04acec,  #0186ba);	
-	background: -webkit-gradient(linear, left top, left bottom, from(#04acec), to(#0186ba));
-	background: -webkit-linear-gradient(#04acec,  #0186ba);
-	background: -o-linear-gradient(#04acec,  #0186ba);
-	background: -ms-linear-gradient(#04acec,  #0186ba);
-	background: linear-gradient(#04acec,  #0186ba);
+    color:#a14e12;
+
 }
 
 #menu ul li:first-child a{
     -moz-border-radius: 5px 5px 0 0;
     -webkit-border-radius: 5px 5px 0 0;
-    border-radius: 5px 5px 0 0;
+    border-radius: 0;
 }
 
 #menu ul li:first-child a:after{
@@ -141,6 +128,7 @@
     -moz-border-radius: 0 0 5px 5px;
     -webkit-border-radius: 0 0 5px 5px;
     border-radius: 0 0 5px 5px;
+    padding-right: 0;
 }
 
 /* Clear floated elements */
@@ -150,7 +138,8 @@
 	font-size: 0;
 	content: " ";
 	clear: both;
-	height: 0;
+  height: 0;
+  
 }
 
 * html #menu             { zoom: 1; } /* IE6 */
@@ -158,6 +147,7 @@
 #menu > li:last-child
 {
     float:right;
+    
 }
 
 
@@ -169,6 +159,7 @@ body {
     margin-right: auto;
     margin-left: auto;
     max-width: 1180px;
+    font-family: 'Lato', sans-serif; color:#a14e12 
    }
   
 
@@ -179,11 +170,11 @@ body {
 /* Slideshow container */
 .slideshow-container 
 {
-  max-width: 1000px;
+  max-width: 1180px;
   position: relative;
   margin: auto;
-  -webkit-box-shadow: 5px 5px 5px 0px #000000, inset 4px 4px 15px 0px #000000, 5px 5px 15px 5px rgba(0,0,0,0); 
-  box-shadow: 5px 5px 5px 0px #000000, inset 4px 4px 15px 0px #000000, 5px 5px 15px 5px rgba(0,0,0,0);
+  -webkit-box-shadow: 5px 5px 5px 5px #000000, inset 4px 4px 15px 0px #000000, 5px 5px 15px 5px rgba(0,0,0,0); 
+  box-shadow: 1px 1px 10px 1px #000000, inset 4px 4px 15px 0px #000000, 5px 5px 15px 5px rgba(0,0,0,0);
 }
 
 /* Hide the images by default */
@@ -271,8 +262,11 @@ body {
 }
 
 
-
-
+/* align cert */
+.alignment
+{
+  text-align:center;
+}
 
 
 
@@ -281,6 +275,7 @@ body {
   border-radius: 5px;
   cursor: pointer;
   transition: 0.3s;
+  text-align: center;
 }
 
 #myImg:hover {opacity: 0.7;}
@@ -383,9 +378,9 @@ body {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  width: 90%;
-  -webkit-box-shadow: 5px 5px 5px 0px #000000, inset 4px 4px 15px 0px #000000, inset 5px 5px 15px 5px rgba(255,147,67,0); 
-box-shadow: 5px 5px 5px 0px #000000, inset 4px 4px 15px 0px #000000, inset 5px 5px 15px 5px rgba(255,147,67,0);
+  width: 1180px;
+  -webkit-box-shadow: 5px 5px 5px 19px #000000, inset 4px 4px 4px 4px #000000, inset 5px 5px 5px 5px rgba(255,147,67,0); 
+  box-shadow: 1px 1px 10px 1px #000000, inset 4px 4px 4px 4px #000000, inset 5px 5px 5px 5px rgba(255,147,67,0);
 }
 
 
@@ -421,16 +416,10 @@ hr {
   border-top: 1px solid #eee;
 }
 
-h1 { font-family: Courier New, Courier, Lucida Sans Typewriter, Lucida Typewriter, monospace; font-size: 24px; 
-  font-style: normal; font-variant: normal; font-weight: 700; line-height: 26.4px; color:#a14e12 } 
-  h3 { font-family: Courier New, Courier, Lucida Sans Typewriter, Lucida Typewriter, monospace; 
-    font-size: 14px; font-style: normal; font-variant: normal; font-weight: 700; line-height: 15.4px; } 
-    p { font-family: Courier New, Courier, Lucida Sans Typewriter, Lucida Typewriter, monospace; font-size: 14px;
-       font-style: normal; font-variant: normal; font-weight: 400; line-height: 20px; } 
-       blockquote { font-family: Courier New, Courier, Lucida Sans Typewriter, Lucida Typewriter, monospace; font-size: 21px;
-         font-style: normal; font-variant: normal; font-weight: 400; line-height: 30px; } pre { font-family: Courier New, Courier, 
-          Lucida Sans Typewriter, Lucida Typewriter, monospace; font-size: 13px; font-style: normal; font-variant: normal; font-weight: 400; 
-          line-height: 18.5667px; }
+h1 { font-family: 'Lato', sans-serif; color:#a14e12 } 
+  h3 { font-family: 'Lato', sans-serif;} 
+    p { font-family: 'Lato', sans-serif; } 
+       blockquote { font-family: 'Lato', sans-serif; } pre { font-family: 'Lato', sans-serif;}
 
 
            /* Three image containers (use 25% for four, and 50% for two, etc) */
@@ -512,8 +501,7 @@ h1 { font-family: Courier New, Courier, Lucida Sans Typewriter, Lucida Typewrite
 
 #h1font
 {
-  font-family: "Times New Roman", Times, serif;
-  font-size: 19px;
+  font-family: 'Lato', sans-serif;
   letter-spacing: -0.4px;
   word-spacing: 0.8px;
   color: #000000;
@@ -525,3 +513,19 @@ h1 { font-family: Courier New, Courier, Lucida Sans Typewriter, Lucida Typewrite
 }
 
 
+.navbar-header
+{
+  text-align : center;
+}
+
+
+footer 
+{
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: white;
+  color: black;
+  text-align: center;
+}
