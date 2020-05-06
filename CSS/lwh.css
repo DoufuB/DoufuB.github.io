@@ -121,15 +121,9 @@
 }
 
 #menu ul li:first-child a:hover:after{
-    border-bottom-color: #f7f7f7; 
+    border-bottom-color: #752c0a; 
 }
 
-#menu ul li:last-child a{
-    -moz-border-radius: 0 0 5px 5px;
-    -webkit-border-radius: 0 0 5px 5px;
-    border-radius: 0 0 5px 5px;
-    padding-right: 0;
-}
 
 /* Clear floated elements */
 #menu:after{
