@@ -1,29 +1,28 @@
 /* Main */
 #menu{
-	width: 100%;
-	margin: 0;
-	padding: 20px 0 0 0;
-	list-style: none;  
-	background:white;
-
+  float:right;
+  margin-top:0;
 }
 
 #menu li{
-	float: left;
 	padding: 0 0 10px 0;
-	position: relative;
+  position: relative;
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  text-decoration: none;
+  font-size: 14px;
 }
 
 #menu a{
-	float: left;
+	float: right;
 	height: 30px;
-	padding: 0 25px;
+	padding: 0 15px;
 	color: #8b3413;
 	text-transform: uppercase;
 	font-family: 'Lato', sans-serif;;
 	text-decoration: none;
-  text-shadow: 0 1px 0 #000;
-  padding-left: 0;
+
 }
 
 #menu li:hover > a{
@@ -60,17 +59,10 @@
     margin: 0;
     padding: 0;
     display: block;  
-    -moz-box-shadow: 0 1px 0 #111111, 0 2px 0 #777777;
-    -webkit-box-shadow: 0 1px 0 #111111, 0 2px 0 #777777;
-    box-shadow: 0 1px 0 #111111, 0 2px 0 #777777;
+
 }
 
-#menu ul li:last-child{   
-    -moz-box-shadow: none;
-    -webkit-box-shadow: none;
-    box-shadow: none;    
-    
-}
+
 
 #menu ul a{    
     padding: 10px;
@@ -138,11 +130,7 @@
 
 * html #menu             { zoom: 1; } /* IE6 */
 *:first-child+html #menu { zoom: 1; } /* IE7 */
-#menu > li:last-child
-{
-    float:right;
-    
-}
+
 
 
 * {box-sizing:border-box}
@@ -167,8 +155,7 @@ body {
   max-width: 1180px;
   position: relative;
   margin: auto;
-  -webkit-box-shadow: 5px 5px 5px 5px #000000, inset 4px 4px 15px 0px #000000, 5px 5px 15px 5px rgba(0,0,0,0); 
-  box-shadow: 1px 1px 10px 1px #000000, inset 4px 4px 15px 0px #000000, 5px 5px 15px 5px rgba(0,0,0,0);
+
 }
 
 /* Hide the images by default */
@@ -397,9 +384,11 @@ body {
 /* Style the collapsible content. Note: hidden by default */
 .content {
   padding: 0 18px;
+  width: 100%;
   display: none;
   overflow: hidden;
-  background-color: #f1f1f1;
+  background-color: #f1f1f1a1;
+
 } 
 
 
@@ -466,7 +455,9 @@ h1 { font-family: 'Lato', sans-serif; color:#a14e12 }
 
 .navbar-header
 {
-  text-align : center;
+  text-align : left;
+  margin-bottom:-80px;
+  padding-bottom:12px;
 }
 
 
@@ -506,14 +497,45 @@ footer
 
 .hrcolored
 {
-  border: 0;   /* in order to override TWBS stylesheet */
-  height: 5px;
-  background: -webkit-linear-gradient(left, rgba(196,222,138,1) 0%, rgba(196,222,138,1) 12.5%, rgba(245,253,212,1) 12.5%,
-   rgba(245,253,212,1) 25%, rgba(255,208,132,1) 25%, rgba(255,208,132,1) 37.5%, rgba(242,122,107,1) 37.5%, rgba(242,122,107,1) 50%,
-    rgba(223,157,185,1) 50%, rgba(223,157,185,1) 62.5%, rgba(192,156,221,1) 62.5%, rgba(192,156,221,1) 75%, rgba(95,156,217,1) 75%,
-     rgba(95,156,217,1) 87.5%, rgba(94,190,227,1) 87.5%, rgba(94,190,227,1) 87.5%, rgba(94,190,227,1) 100%);
-
+ display: block;
+width: 100px;
+height: 5px;
+background-color: orange;
+margin: 0 auto;
+    margin-top: 0px;
+margin-top: 10px;
 }
 
 
- 
+header {
+  border-bottom:16px solid #8b4513;;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 1;
+  margin-top: -8px;
+}
+
+underbar
+{
+  color: white;
+  border-bottom:16px solid #8b4513;;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 1;
+  margin-top: -17px;
+}
+
+text
+{
+  font-size: 20px;
+  text-align: center;
+  box-sizing: border-box;
+  font-family: Alegreya,sans-serif,"Helvetica Neue",Helvetica,Arial;
+  font-size: 14px;
+  line-height: 1.42857143;
+  color: #333;
+  vertical-align: middle;
+
+}
