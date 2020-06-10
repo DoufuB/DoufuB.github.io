@@ -20,7 +20,7 @@
                     
                     <div class="navbar-header">
                       <a class="navbar-brand spring-navbar-brand" href="index.html">
-                        <img  class="img-responsive" src="static picture/JFLogo4.png">
+                        <img  class="img-responsive" src="static picture/JFLogo4.png" style="width:35%">
                       </a>
                     </div>
                   <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
@@ -66,25 +66,106 @@
 <br>
 <br>
 <hr>
-<!-- Slideshow container -->
-<div class="slideshow-container" id="borderDemo">
-    <img class="mySlides" src="static picture/IMG_0001-1024x683.jpg" width="1024" height="683">
-    <img class="mySlides" src="static picture/1KS_0126-1024x678.jpg" width="1024" height="683">
-    <img class="mySlides" src="static picture\WhatsApp Image 2020-04-27 at 13.12.36.jpeg" width="1024" height="683">
-    <img class="mySlides" src="static picture\WhatsApp Image 2020-04-27 at 13.17.07.jpeg" width="1024" height="683">
-    <button class="prev" onclick="plusDivs(-1)">&#10094;</button>
-    <button class="next" onclick="plusDivs(+1)">&#10095;</button>
-</div>
-  <!-- java script for slideshow-->
-  <script src="script/lwh.js"></script>
 
 
-  <hr>
+
+
+
+
+  
+  <div class="slideshow-container">
+
+    <div class="mySlides fade">
+    
+      <img src="static picture\WhatsApp Image 2020-04-27 at 13.12.36.jpeg" width="1170" height="683">
+      <div class="text">
+        <p>JF foundation Singapore</p>
+        <h5>2020</h5>
+      </div>
+    </div>
+    
+    <div class="mySlides fade">
+    
+      <img src="static picture/1KS_0126-1024x678.jpg" width="1170" height="683">
+      <div class="text">
+        <p>JF foundation & LWH HOLDINGS PTE LTD</p>
+        <h5>2020</h5>
+      </div>
+    </div>
+    
+    <div class="mySlides fade">
+    
+      <img src="static picture\WhatsApp Image 2020-04-27 at 13.17.07.jpeg" width="1170" height="683">
+      <div class="text">
+        <p>JF foundation & LWH HOLDINGS PTE LTD</p>
+        <h5>2020</h5>
+      </div>
+    </div>
+    
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    
+    </div>
+    <br>
+    
+    <div style="text-align:center">
+      <span class="dot" onclick="currentSlide(1)"></span> 
+      <span class="dot" onclick="currentSlide(2)"></span> 
+      <span class="dot" onclick="currentSlide(3)"></span> 
+    </div>
+    
+    <script>
+    var slideIndex = 1;
+    showSlides(slideIndex);
+    
+    function plusSlides(n) {
+      showSlides(slideIndex += n);
+    }
+    
+    function currentSlide(n) {
+      showSlides(slideIndex = n);
+    }
+    
+    function showSlides(n) {
+      var i;
+      var slides = document.getElementsByClassName("mySlides");
+      var dots = document.getElementsByClassName("dot");
+      if (n > slides.length) {slideIndex = 1}    
+      if (n < 1) {slideIndex = slides.length}
+      for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";  
+      }
+      for (i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex-1].style.display = "block";  
+      dots[slideIndex-1].className += " active";
+    }
+    </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <hr class="brown_hr">
   <!-- Descript about company JF-->
   
-  <h2>COMPANY</h2> 
-  <p id="h1font">JFFOUNDATION was founded in 2007, with businesses focusing on bored piling and piling works foundation in Singapore and Malaysia. We build a successful track record with emphasis on high quality services.</p>
-  <a href ="company.html">more</a>
+  <div class="spring-card-title-icon"></div> <h2>COMPANY</h2> 
+  <p id="h1font">JF Foundation Pte Ltd, registered with the Building And Construction Authority of Singapore for L5 in Piling Works is an ISO9001 certified company committed in delivering quality services without compromising the safety and well-being of its employee.
+
+    JF Foundation Pte Ltd is the outcome of the extensive experience of its management team and engineering staff. Our professional approach allows us to provide “Best Value” solutions for our customers. With our wide range of expertise in bored piling works, we have successfully completed projects for a diverse range of clients from both the private and government sectors.
+    
+    <br>
+    <br>
+    <a href ="company.html" style="position:relative; right: -1131px;">More</a>
 
 
   <span>
@@ -112,7 +193,8 @@
     </div>
   </div> 
 
-  <hr>
+  <hr style="border-color: orange;
+  opacity: 1;">
   
   <p>Our professional approach allows us to provide “Best Value” solutions for our customers</p>
   <br>
