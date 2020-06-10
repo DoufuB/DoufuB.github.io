@@ -283,8 +283,6 @@ body {
   margin-left: auto;
   margin-right: auto;
   width: 1180px;
-  -webkit-box-shadow: 5px 5px 5px 19px #000000, inset 4px 4px 4px 4px #000000, inset 5px 5px 5px 5px rgba(255,147,67,0); 
-  box-shadow: 1px 1px 10px 1px #000000, inset 4px 4px 4px 4px #000000, inset 5px 5px 5px 5px rgba(255,147,67,0);
 }
 
 
