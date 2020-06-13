@@ -2,6 +2,7 @@
 #menu{
   float: right;
 margin-top: 14px;
+list-style-type: none;
 }
 
 #menu li{
@@ -49,7 +50,7 @@ margin-top: 14px;
     left: 0;
     z-index: 99999;    
     background: white;
-
+  
     -moz-border-radius: 5px;
     border-radius: 5px;
 }
@@ -605,4 +606,15 @@ a {
   top: 10px;
   position: relative;
   right: -43px;
+ }
+
+ .singapore
+ {
+  width: 24px;
+ }
+
+ .malaysia
+ {
+  width: 24px;
+
  }
