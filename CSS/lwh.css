@@ -12,7 +12,7 @@ list-style-type: none;
   color: #ffffff;
   text-align: center;
   text-decoration: none;
-  font-size: 14px;
+  font-size: 13px;
 }
 
 #menu a{
@@ -413,19 +413,19 @@ footer
 width: 100px;
 height: 5px;
 background-color: orange;
-margin: 0 auto;
-    margin-top: 0px;
-margin-top: 10px;
+
+
 }
 
 
 header {
-  border-bottom:16px solid #8b4513;;
-  position: absolute;
-  left: 0;
+  border-bottom: 16px solid #8b4513;
+  left: 0px;
   right: 0;
-  bottom: 1;
+  width: 100%;
   margin-top: -8px;
+  position:absolute;
+   right:0; 
 }
 
 underbar
@@ -605,7 +605,7 @@ a {
  {
   top: 10px;
   position: relative;
-  right: -43px;
+  right: -20px;
  }
 
  .singapore
@@ -618,3 +618,21 @@ a {
   width: 24px;
 
  }
+
+ .gallery-text-left
+ {
+  font-family: Alegreya,sans-serif,"Helvetica Neue",Helvetica,Arial;
+  font-size: 14px;
+  line-height: 1.42857143;
+  display: block;
+  column-count: 2;
+  box-sizing: border-box;
+  }
+
+
+
+  @media screen and (max-width: 1170px) {
+    img {
+      max-width: 1000px;
+    }
+}
