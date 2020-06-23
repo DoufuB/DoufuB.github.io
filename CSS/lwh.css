@@ -181,6 +181,7 @@ body {
   cursor: pointer;
   transition: 0.3s;
   text-align: center;
+  height: auto;
 }
 
 #myImg:hover {opacity: 0.7;}
@@ -204,6 +205,7 @@ body {
   border-radius: 5px;
   cursor: pointer;
   transition: 0.3s;
+  height: auto;
 }
 
 #myImg1:hover {opacity: 0.7;}
@@ -335,10 +337,6 @@ h1 { font-family: 'Lato', sans-serif; color:#a14e12 }
   text-align: center;
   width: 123px;
   vertical-align: middle;
-  position: relative;
-  left: 347px;
-
-    
 }
 
 
@@ -397,6 +395,7 @@ footer
   padding: 15px;
   width: 200px;
   border-radius: 100%;
+  height: auto;
 }
 
 .gallery img:hover
@@ -458,13 +457,15 @@ text
 
 
 .mySlides {display: none}
-img {vertical-align: middle;}
+img {vertical-align: middle;
+  width: 100%;
+  height: auto;}
 
 /* Slideshow container */
 .slideshow-container {
-  width: 1178px;
   position: relative;
   margin: auto;
+  width: 100%;
 }
 
 /* Next & previous buttons */
@@ -631,8 +632,10 @@ a {
 
 
 
-  @media screen and (max-width: 1170px) {
-    img {
-      max-width: 1000px;
+  @media screen and (max-width: 1172px) 
+  {
+    #menu{
+      display: none;
     }
 }
+
