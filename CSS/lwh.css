@@ -278,10 +278,9 @@ body {
 
 
 .center {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 1180px;
+  vertical-align: middle;
+  width: 100%;
+  height: auto;
 }
 
 
@@ -606,7 +605,7 @@ a {
  {
   top: 10px;
   position: relative;
-  right: -20px;
+  width:35%;
  }
 
  .singapore
@@ -630,12 +629,145 @@ a {
   box-sizing: border-box;
   }
 
+ /* This is for hambuger */
+ .nav{
+  text-align: right;
 
+ }
+ 
+ .menu
+ {
+   margin: 0 30px 0 0;
+   display: none;
+ }
+
+ .menu a{
+  clear: right;
+  text-decoration:none;
+  color: gray;
+  margin: 0 10px;
+  line-height: 70px;
+
+ }
+
+ span{
+  color: #54D17A;
+ }
+
+ label{
+  margin: 0 40px 0 0;
+  font-size: 26px;
+  line-height: 55px;
+  display: none;
+ }
+
+ #toggle{
+  display: none;
+ }
 
   @media screen and (max-width: 1172px) 
   {
     #menu{
       display: none;
     }
+
+    label{
+      display: block;
+      cursor: pointer;
+      position: relative;
+      top: -22px;
+    }
+    .remove_br br{
+      display:none;
+    }
+    .menu{
+      text-align:center;
+      width:100%;
+      display: none;
+    }
+    .menu a{
+      display: block;
+      border-bottom: 1px solid #EAEAEB;
+      margin: 0;
+    }
+
+    #toggle:checked + .menu{
+      display:block;
+
+    }
+
+    .img-responsive {
+      position: relative;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      width: 50%;
+  }
 }
+
+
+@media screen and (max-width: 850px) 
+  {
+      label{
+        line-height: 84px;
+       }
+}
+@media screen and (max-width: 750px) 
+  {
+      label{
+        line-height: 119px;
+       }
+       .img-responsive {
+        width: 48%;
+        top: 23px;
+    }
+}
+
+@media screen and (max-width: 650px) 
+  {
+      label{
+        line-height: 138px;
+       }
+}
+
+@media screen and (max-width: 550px) 
+  {
+      label{
+        line-height: 148px;
+        font-size: 22px;
+       }
+       .img-responsive {
+        width: 55%;
+        top: 23px;
+    }
+}
+
+
+@media screen and (max-width: 450px) 
+  {
+      label{
+        line-height: 158px;
+        font-size: 20px;
+       }
+}
+@media screen and (max-width: 350px) 
+  {
+      label{
+        line-height: 124px;
+font-size: 20px;
+       }
+}
+@media screen and (max-width: 300px) 
+  {
+      label{
+        line-height: 178px;
+        font-size: 20px;
+
+       }
+       .img-responsive {
+        width: 72%;
+        top: 23px;
+    }
+}
+
 
