@@ -394,7 +394,6 @@ footer
   padding: 15px;
   width: 200px;
   border-radius: 100%;
-  height: auto;
 }
 
 .gallery img:hover
@@ -458,7 +457,7 @@ text
 .mySlides {display: none}
 img {vertical-align: middle;
   width: 100%;
-  height: auto;}
+  }
 
 /* Slideshow container */
 .slideshow-container {
@@ -750,10 +749,22 @@ a {
         font-size: 20px;
        }
 }
+
+@media screen and (max-width: 375px) 
+{
+    label{
+      line-height: 193px;
+font-size: 21px;
+left: 18px;
+     }       .img-responsive {
+        width: 72%;
+        top: 43px;
+    }
+}
 @media screen and (max-width: 350px) 
   {
       label{
-        line-height: 124px;
+        line-height: 179px;
 font-size: 20px;
        }
 }
