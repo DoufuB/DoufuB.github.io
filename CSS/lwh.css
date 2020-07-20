@@ -666,6 +666,10 @@ a {
 
   @media screen and (max-width: 1172px) 
   {
+
+    body{    padding-left: 10px;
+      padding-right: 10px;}
+    
     #menu{
       display: none;
     }
@@ -707,12 +711,18 @@ a {
 
 @media screen and (max-width: 850px) 
   {
+    body{    padding-left: 10px;
+      padding-right: 10px;}
+
       label{
         line-height: 84px;
        }
 }
 @media screen and (max-width: 750px) 
   {
+    body{    padding-left: 10px;
+      padding-right: 10px;}
+
       label{
         line-height: 119px;
        }
@@ -724,6 +734,9 @@ a {
 
 @media screen and (max-width: 650px) 
   {
+    body{    padding-left: 10px;
+      padding-right: 10px;}
+
       label{
         line-height: 138px;
        }
@@ -731,6 +744,9 @@ a {
 
 @media screen and (max-width: 550px) 
   {
+    body{    padding-left: 10px;
+      padding-right: 10px;}
+
       label{
         line-height: 148px;
         font-size: 22px;
@@ -744,6 +760,9 @@ a {
 
 @media screen and (max-width: 450px) 
   {
+    body{    padding-left: 10px;
+      padding-right: 10px;}
+
       label{
         line-height: 158px;
         font-size: 20px;
@@ -752,6 +771,9 @@ a {
 
 @media screen and (max-width: 375px) 
 {
+  body{    padding-left: 10px;
+    padding-right: 10px;}
+
     label{
       line-height: 193px;
 font-size: 21px;
@@ -762,7 +784,9 @@ left: 18px;
     }
 }
 @media screen and (max-width: 350px) 
-  {
+  { body{    padding-left: 10px;
+      padding-right: 10px;}
+
       label{
         line-height: 179px;
 font-size: 20px;
@@ -770,6 +794,9 @@ font-size: 20px;
 }
 @media screen and (max-width: 300px) 
   {
+    body{    padding-left: 10px;
+      padding-right: 10px;}
+
       label{
         line-height: 178px;
         font-size: 20px;
