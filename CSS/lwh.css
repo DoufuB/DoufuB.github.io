@@ -866,6 +866,9 @@ height: auto;
       label{
         line-height: 84px;
        }
+       .slideshow-container {
+        top: -40px;
+    }
 }
 @media screen and (max-width: 750px) 
   {
@@ -879,6 +882,9 @@ height: auto;
         width: 48%;
         top: 23px;
     }
+    .slideshow-container {
+      top: -60px;
+  }
 }
 
 @media screen and (max-width: 650px) 
@@ -904,6 +910,9 @@ height: auto;
         width: 55%;
         top: 23px;
     }
+    .slideshow-container {
+      top: -65px;
+  }
 }
 
 
@@ -916,6 +925,8 @@ height: auto;
         line-height: 158px;
         font-size: 20px;
        }
+
+
 }
 
 @media screen and (max-width: 375px) 
